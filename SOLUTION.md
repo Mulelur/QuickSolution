@@ -18,7 +18,7 @@
     - AI Assistant chat panel (history & retry)
     - Observability logs panel
   - State management via Redux
-  - Charts (bar/line) for monthly totals using ui.shadcn charts
+  - Charts (area) for monthly totals using ui.shadcn charts
   - Responsive design using Tailwind CSS.
 
 ## Assumptions
