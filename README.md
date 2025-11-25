@@ -105,7 +105,7 @@ ai-elements
 ai-sdk
 ```
 
-## File references (suggested)
+## File references
 
 - Backend
   - app/main.py (FastAPI app)
