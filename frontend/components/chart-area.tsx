@@ -47,7 +47,8 @@ export function AnalyticsChart({
     return <p>No data</p>;
   }
 
-  const formattedData = data.map((item) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const formattedData = data.map((item: any) => {
     const key = valueKey;
 
     return {

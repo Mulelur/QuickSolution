@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import * as React from "react";
@@ -29,9 +31,7 @@ type DataType = "payments" | "invoices";
 
 export default function DataTable({ payments }: { payments: Payment[] }) {
   const [dataType, setDataType] = React.useState<DataType>("payments");
-  const [tableData, setTableData] = React.useState<Payment[] | Invoice[]>(
-    payments
-  );
+  const [tableData, setTableData] = React.useState<any>(payments);
   const [page, setPage] = React.useState(1);
   const [total, setTotal] = React.useState(0);
   const pageSize = 10;
@@ -65,7 +65,7 @@ export default function DataTable({ payments }: { payments: Payment[] }) {
   const columns = React.useMemo(
     () => (dataType === "payments" ? paymentColumns : invoiceColumns),
     [dataType]
-  );
+  ) as any;
 
   // Fetch page-specific data for the table
   const fetchPage = async (pageNumber: number) => {

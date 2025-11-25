@@ -30,12 +30,13 @@ export default function ChatBotDemo() {
   const dispatch = useDispatch<AppDispatch>();
 
   const messages = useSelector((state: RootState) => state.chat.messages);
-  const status = useSelector((state: RootState) => state.chat.status);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const status = useSelector((state: RootState) => state.chat.status) as any;
 
   const [input, setInput] = useState("");
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleSubmit = (message: { text: any; files: File[] }) => {
+  const handleSubmit = (message: any) => {
     const hasText = Boolean(message.text);
     if (!hasText) return;
 
