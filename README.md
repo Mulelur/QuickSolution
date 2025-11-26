@@ -56,9 +56,9 @@ Install dependencies:
 
 `pip install -r requirements.txt`
 
-Create .env
+Create `.env`
 
-copy the example.env to a create .env and populate it
+copy the `example.env` to a create `.env` and populate it
 
 Run the backend:
 
@@ -84,9 +84,9 @@ Create a minimal Next.js page to call the backend
 
 Run frontend:
 
-Create .env
+Create `.env`
 
-copy the example.env to a create .env and populate it
+copy the `example.env` to a create `.env` and populate it
 
 ```
 cd frontend
